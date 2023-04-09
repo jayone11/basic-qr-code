@@ -15,20 +15,16 @@ function QRCodeGenerator() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100px", width: "100%", backgroundColor: "#f1f1f1" }}>
-        <h2>Advertisement Banner</h2>
-      </div>
+    <div className="qr-code-generator-container">
       <h1>QR Code Generator</h1>
       <input
         type="text"
         value={url}
         placeholder="Enter a URL"
         onChange={(e) => setUrl(e.target.value)}
-        style={{ marginBottom: "20px" }}
       />
-      <button onClick={generateQRCode} style={{ marginTop: "20px" }}>Generate QR Code</button>
-      {qrCodeDataUrl && <img src={qrCodeDataUrl} alt="QR Code" style={{ height: "400px", width: "400px", marginTop: "20px" }} />}
+      <button onClick={generateQRCode}>Generate QR Code</button>
+      {qrCodeDataUrl && <img src={qrCodeDataUrl} alt="QR Code" />}
     </div>
   );
 }
