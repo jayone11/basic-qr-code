@@ -24,8 +24,8 @@ function QRCodeGenerator() {
     const ins = document.createElement("ins");
     ins.className = "adsbygoogle";
     ins.style.display = "block";
-    ins.setAttribute("data-ad-client", "ca-pub-XXXXXXXXXXXXXXXX");
-    ins.setAttribute("data-ad-slot", "1234567890");
+    ins.setAttribute("data-ad-client", "ca-pub-4841635049282195");
+    ins.setAttribute("data-ad-slot", "8047351066");
     ins.setAttribute("data-ad-format", "auto");
     ins.setAttribute("data-full-width-responsive", "true");
     document.body.appendChild(ins);

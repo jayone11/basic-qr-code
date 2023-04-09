@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import QRCode from "qrcode";
 
 function QRCodeGenerator() {
@@ -13,6 +13,13 @@ function QRCodeGenerator() {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4841635049282195";
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
